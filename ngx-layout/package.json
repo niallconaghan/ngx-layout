@@ -1,12 +1,31 @@
 {
-  "name": "@niallconaghan/ngx-layout",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^17.0.0",
-    "@angular/core": "^17.0.0"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "sideEffects": false
+    "name": "@niallconaghan/ngx-layout",
+    "version": "0.0.4",
+    "peerDependencies": {
+        "@angular/common": "^17.0.0",
+        "@angular/core": "^17.0.0"
+    },
+    "dependencies": {
+        "tslib": "^2.3.0"
+    },
+    "sideEffects": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "homepage": "https://ngx-notified.web.app/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/niallconaghan/ngx-layout"
+    },
+    "keywords": [
+        "ngx",
+        "ng2",
+        "angular",
+        "angular2",
+        "typescript",
+        "layout",
+        "header",
+        "side menu",
+        "main content"
+    ]
 }
