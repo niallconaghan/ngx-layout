@@ -1,0 +1,55 @@
+// ngx-layout {
+//   --ngx-layout-side-menu__width: 500px;
+// }
+
+ngx-layout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+ngx-layout-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-menu-content {
+  margin-left: 16px;
+  margin-top: 16px;
+  width: 250px;
+}
+
+.responsive-side-menu-content {
+  margin-left: 16px;
+  margin-top: 16px;
+  width: 250px;
+}
+
+.main-content-blocks {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.margin-bottom {
+  margin-bottom: 16px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive-side-menu-content {
+    display: none;
+  }
+}

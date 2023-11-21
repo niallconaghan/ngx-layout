@@ -2,10 +2,6 @@
 
 A simple set of customizable components to construct a full page layout.
 
-## Demo
-
-View the demo page [here](https://ngx-layout.web.app/).
-
 ## Install
 
 Using npm:

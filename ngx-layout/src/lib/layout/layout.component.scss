@@ -1,0 +1,81 @@
+@use '../../theme/variables';
+
+:host.ngx-layout {
+  display: grid;
+  height: 100dvh;
+
+  ::ng-deep ngx-layout-header {
+    grid-area: header;
+    background-color: var(--ngx-layout-header__background-color);
+  }
+
+  ::ng-deep ngx-layout-side-menu {
+    grid-area: aside;
+    overflow: auto;
+    background-color: var(--ngx-layout-side-menu__background-color);
+  }
+
+  ::ng-deep ngx-layout-main-content {
+    grid-area: main;
+    overflow: auto;
+    background-color: var(--ngx-layout-main-content__background-color);
+  }
+}
+
+:host.ngx-layout.header.side-menu.main-content.fullscreen-menu.side-menu-start {
+  grid-template-areas:
+    'aside header'
+    'aside main';
+  grid-template-rows: var(--ngx-layout-header__height) 1fr;
+  grid-template-columns: var(--ngx-layout-side-menu__width) 1fr;
+}
+
+:host.ngx-layout.header.side-menu.main-content.side-menu-start {
+  grid-template-areas:
+    'header header'
+    'aside main';
+  grid-template-rows: var(--ngx-layout-header__height) 1fr;
+  grid-template-columns: var(--ngx-layout-side-menu__width) 1fr;
+}
+
+:host.ngx-layout.side-menu.main-content.side-menu-start {
+  grid-template-areas: 'aside main';
+  grid-template-rows: 1fr;
+  grid-template-columns: var(--ngx-layout-side-menu__width) 1fr;
+}
+
+:host.ngx-layout.header.side-menu.main-content.fullscreen-menu.side-menu-end {
+  grid-template-areas:
+    'header aside'
+    'main aside';
+  grid-template-rows: var(--ngx-layout-header__height) 1fr;
+  grid-template-columns: 1fr var(--ngx-layout-side-menu__width);
+}
+
+:host.ngx-layout.header.side-menu.main-content.side-menu-end {
+  grid-template-areas:
+    'header header'
+    'main aside';
+  grid-template-rows: var(--ngx-layout-header__height) 1fr;
+  grid-template-columns: 1fr var(--ngx-layout-side-menu__width);
+}
+
+:host.ngx-layout.side-menu.main-content.side-menu-end {
+  grid-template-areas: 'main aside';
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr var(--ngx-layout-side-menu__width);
+}
+
+:host.ngx-layout.header.main-content {
+  grid-template-areas:
+    'header'
+    'main';
+  grid-template-rows: var(--ngx-layout-header__height) 1fr;
+  grid-template-columns: 1fr;
+}
+
+:host.ngx-layout.main-content {
+  grid-template-areas: 'main';
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&family=Titillium+Web:wght@400;600;700&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+table {
+  width: 800px;
+
+  th {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    font-weight: 500;
+    height: 56px;
+  }
+
+  th[align=''],
+  th:not([align]) {
+    text-align: left;
+  }
+
+  td {
+    font-size: 15px;
+    height: 48px;
+  }
+
+  td,
+  th {
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+  }
+}

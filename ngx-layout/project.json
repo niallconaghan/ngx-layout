@@ -1,0 +1,44 @@
+{
+  "name": "ngx-layout",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ngx-layout/src",
+  "prefix": "ngx-layout",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "ngx-layout/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "ngx-layout/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "ngx-layout/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "ngx-layout/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "ngx-layout/**/*.ts",
+          "ngx-layout/**/*.html",
+          "ngx-layout/package.json"
+        ]
+      }
+    }
+  }
+}
