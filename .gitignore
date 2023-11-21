@@ -42,3 +42,7 @@ Thumbs.db
 .angular
 .vscode/extensions.json
 .vscode/settings.json
+.firebase
+*.cache
+firebase.json
+.firebaserc

@@ -61,6 +61,16 @@ Or for non-standalone applications you can import the <b>NgxLayoutModule</b>.
 export class AppComponent {}
 ```
 
+You want to set the body of your html to 100% height and width
+```css
+/* styles.scss */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+```
+
 The most simple usage is to use the components on the page template.
 
 ```html
