@@ -1,6 +1,6 @@
 {
     "name": "@niallconaghan/ngx-layout",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "peerDependencies": {
         "@angular/common": "^17.0.0",
         "@angular/core": "^17.0.0"
@@ -12,7 +12,7 @@
     "publishConfig": {
         "access": "public"
     },
-    "homepage": "https://ngx-notified.web.app/",
+    "homepage": "https://ngx-layout.web.app/",
     "repository": {
         "type": "git",
         "url": "https://github.com/niallconaghan/ngx-layout"
