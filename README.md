@@ -11,17 +11,17 @@ View the demo page [here](https://ngx-layout.web.app/).
 Using npm:
 
 ```
-npm install ngx-layout --save
+npm install @niallconaghan/ngx-layout --save
 ```
 
 ## Documentation
 
-Reference the components theme stylesheet in the styles array of the <b>angular.json</b> or the <b>project.json</b> is developing with NX.
+Reference the theme stylesheet in the styles array of the <b>angular.json</b> or the <b>project.json</b> if developing with NX.
 
 ```json
 "styles": [
     ...
-    "node_modules/ngx-layout/src/theme/_variables.scss",
+    "node_modules/@niallconaghan/ngx-layout/src/theme/_variables.scss"
     ...
 ],
 ```
@@ -61,17 +61,18 @@ Or for non-standalone applications you can import the <b>NgxLayoutModule</b>.
 export class AppComponent {}
 ```
 
-You want to set the body of your html to 100% height and width
+Set the body of your html to 100% height and width.
 ```css
 /* styles.scss */
 html,
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 ```
 
-The most simple usage is to use the components on the page template.
+The most simple usage is to use the components on the page template as follows.
 
 ```html
 <!-- app.component.html -->
@@ -82,7 +83,7 @@ The most simple usage is to use the components on the page template.
 </ngx-layout>
 ```
 
-You omit the header or sidemenu to achieve a header/content or sidemenu/content only layout.
+You can omit the header or sidemenu to achieve a header/content or sidemenu/content only layout.
 
 ## Configuration
 
@@ -127,10 +128,10 @@ The layout components take optional configuration via inputs:
 </ngx-layout>
 ```
 
-If you perfer to configure the layout components via css you can overside the theme variables.
+If you perfer to configure the layout components via css you can override the theme variables.
 
 ```css
-:root {
+ngx-layout {
   --ngx-layout-header__height: 55px;
   --ngx-layout-header__background-color: #0d47a1;
   --ngx-layout-side-menu__width: 250px;
